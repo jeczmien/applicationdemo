@@ -1,0 +1,40 @@
+<html t:type="layout" title="REST Service"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <div class="hero-unit">
+		<form action="/rest/application/list" method="get">
+			<div style="width: 350px; border: solid;">
+				Name: <input type="text" name="name"/><br/>
+				State: <input type="text" name="state"/><br/>
+				<div style="text-align: center;">
+					<input type="submit" value="Query list" style="text-align: center;"/>
+				</div>
+			</div>
+		</form>
+		<br/><br/>
+		<form action="/rest/application/load" method="get">
+			<div style="width: 350px; border: solid;">
+				Id: <input type="text" name="id"/><br/>
+				<div style="text-align: center;">
+					<input type="submit" value="Get application" style="text-align: center;"/>
+				</div>
+			</div>
+		</form>
+		<br/><br/>
+		<form action="/rest/application/update" method="get">
+			<div style="width: 350px; border: solid;">
+				Id: <input type="text" name="id"/><br/>
+				Name: <input type="text" name="name"/><br/>
+				State: <input type="text" name="state"/><br/>
+				Content: <input type="text" name="content"/><br/>
+				Reject reason: <input type="text" name="rejectReason"/><br/>
+				Delete reason: <input type="text" name="deleteReason"/><br/>
+				<div style="text-align: center;">
+					<input type="submit" value="Update application" style="text-align: center;"/>
+				</div>
+			</div>
+		</form>
+    </div>
+
+</html>

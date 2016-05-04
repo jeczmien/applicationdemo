@@ -1,0 +1,19 @@
+<html t:type="layout" title="View history"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+	<div class="hero-unit">
+		<div class="form-group">
+			<t:BeanDisplay t:id="application"/>
+		</div>
+
+		<div>History of state' changes</div>
+		<t:grid source="history" rowsPerPage="10" pagerPosition="both"/>
+
+		<div class="form-group">
+			<t:form >
+				<t:Submit t:mode="cancel" value="Back to list" class="btn btn-default"/>
+			</t:form>
+		</div>
+	</div>
+</html>

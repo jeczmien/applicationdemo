@@ -1,0 +1,21 @@
+<html t:type="layout" title="About application"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <div class="row">
+        <div class="span12">
+            <p>About application ...</p>
+        </div>
+    </div>
+
+    <t:if test="learn">
+        <div class="row">
+            <div class="span12">
+                <p>
+                    Example application for state change
+                </p>
+            </div>
+        </div>
+    </t:if>
+
+</html>
