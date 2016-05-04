@@ -4,3 +4,7 @@ target
 .project
 .settings
 .classpath
+application.log
+application.properties
+application.script
+createDDL.jdbc
